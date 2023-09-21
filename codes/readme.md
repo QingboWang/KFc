@@ -1,7 +1,7 @@
 `mock_figures_for_fig1.py` was used to generate the graphical overview figure (i.e. Fig. 1 in the manuscript).
 
 
-`generate_knockoff_genotype.R` was used to generate the knockoff genotypes utilizing the [SNPKnock](https://cran.r-project.org/web/packages/SNPknock/index.html) package.
+`generate_knockoff_genotype.R` was used to generate the knockoff genotypes utilizing the [SNPknock](https://cran.r-project.org/web/packages/SNPknock/index.html) package.
 
 
 `simulate_expression.py` was used to generate the realistically-simulated gene expression matrix.
