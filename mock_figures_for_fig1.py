@@ -40,18 +40,16 @@ plt.savefig("/Users/qingbowang/Desktop/plots/mock_heritability_prob.pdf", dpi=50
 plt.clf()
 
 # mock manhattan plots for overview figure:
-# real data + random noiseでいくか..
-# いやただのmockでよいや. tab:red, tab:green, tab:grayで.
 x = np.arange(200)
 fig, ax = plt.subplots(1, 3, figsize=(11, 2), sharey=True, sharex=True)
 np.random.seed(1)
-y0 = 10 / abs(100 - x) ** 0.5  # 距離の0.5joで減衰する適当な値+0~20% noise
-y0[100] = 15  # こいつはあげておく, as lead variant
+y0 = 10 / abs(100 - x) ** 0.5  # some peak + random noise
+y0[100] = 15  # Artificial "lead" variant
 bg_noise = np.random.rand(200)
 ax[0].scatter(x, y0 + bg_noise - 0.5, color="#0097a7ff", edgecolor="black")  # "#0097a7ff") #emperical -0.5..
 np.random.seed(2)
 y0 = 3 / abs(100 - x) ** 0.5
-y0[100] = 5  # こいつはあげておく, as lead variant
+y0[100] = 5
 bg_noise = np.random.rand(200)
 ax[1].scatter(x, y0 + bg_noise, color="tab:orange", edgecolor="black")  # edgecolor="#ffab40ff")
 np.random.seed(3)
