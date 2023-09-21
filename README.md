@@ -5,7 +5,7 @@ Welcome to the github page for the Knockoff-Finemap combination (KFc) study util
 The scripts used in the paper are stored in the `codes` directory.
 
 
-The simulated gene expression data used in the manuscripts are stored in the `simulated_phenotype` directory.
+The simulated gene expression data used in the manuscripts are stored in the `simulated_phenotypes` directory.
 
 
-The knockoff genotype data used in the manuscripts are stored in the `knockoff_genotype` directory.
+The knockoff genotype data used in the manuscripts are stored in the `knockoff_genotypes` directory.
